@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: poppins;
+}
+body{
+    background: url(assets/background.png);
+}
+.infoContainer{
+    background: #b59645;
+}
+.infoContainer__info i{
+    background: yellow;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 100%;
+}
+.container {  
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:max-content max-content max-content max-content max-content max-content max-content max-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "HEADER HEADER HEADER HEADER HEADER"
+      "HERO HERO HERO HERO HERO"
+      "INFO INFO INFO INFO INFO"
+      "SEPARADOR SEPARADOR SEPARADOR SEPARADOR SEPARADOR"
+      "CONTACT CONTACT CONTACT CONTACT CONTACT"
+      "CONTACT__INFO CONTACT__INFO CONTACT__INFO CONTACT__INFO CONTACT__INFO"
+      "DELIVERY DELIVERY DELIVERY DELIVERY DELIVERY"
+      "FOOTER FOOTER FOOTER FOOTER FOOTER";
+  }
+  
+  .HEADER{
+       grid-area: HEADER;
+       background: #2e0a0a;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       height: 100px;
+       width: 100%;
+       position: fixed;
+       z-index: 2;
+    }
+    .HEADER a{
+        color: #fff;
+    }
+    .HEADER strong{
+        font-size: 2rem;
+    }
+    .nav_menu{
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .nav_menu li a{
+        position: relative;
+        padding: 0 10px;
+    }
+    .nav_menu li a:after{
+        content: "";
+        position: absolute;
+        background: #b59645;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: .2s;
+    }
+    .HERO {
+         grid-area: HERO;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         z-index: 1;
+         text-align: center;
+         background: url(assets/background.png);
+        }
+        .HERO img{
+            width: 100%;
+            max-width: 500px;
+        }
+        .HERO h1{
+            font-size: 3rem;
+            font-weight: 900;
+            color: #2e0a0ad8;
+        }
+        .HERO .btn{
+            padding: 30px;
+        }
+        .HERO a{
+            background: #2e0a0a;
+            color: #fff;
+            padding: 20px;
+            border-radius: 30px;
+        }
+  
+  .INFO {
+       grid-area: INFO;
+       background: #b59645;
+       display: flex;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+       min-height: 300px;
+       width: 100%;
+    }
+    .CONTACT__INFO .infoContainer__info{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoContainer__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 400px;
+    }
+    .infoContainer__info p{
+        text-align: center;
+    }
+    .INFO i{
+        background: yellow;
+        padding: 15px;
+        font-size: 25px;
+        border-radius: 100%;
+    }
+  
+  .SEPARADOR { 
+      grid-area: SEPARADOR;
+      background: #2e0a0a;
+      color: #fff;
+      height: 100px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+ }
+ .separador{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .separador img{
+     width: 150px;
+ }
+ .CONTACT{
+    grid-area: CONTACT;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(assets/background.png);
+    background-position: center ;
+    min-height: 100vh;
+ }
+ .CONTACT strong{
+     font-size: 2rem;
+     border-bottom: 2px solid #000;
+     text-align: center;
+ }
+ .contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contactForm input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin:20px 0;
+    padding: 25px;
+    font-size: 18px;
+    background: none;
+}
+.contactForm a{
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: #2e0a0a;
+    width: 100px;
+    text-align: center;
+}
+.CONTACT__BTN{
+    width: max-content;
+    background: #2e0a0a;
+    padding: 20px 30px;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+  .CONTACT__INFO{
+       grid-area: CONTACT__INFO;
+       background: #b59645;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       flex-wrap: wrap;
+       min-height: 250px;
+    }
+    .DELIVERY{
+        grid-area: DELIVERY;
+        display: flex;
+        justify-content: center;
+        text-align:center ;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background: url(assets/background__delivery.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        font-size: 2rem;
+    }
+    .DELIVERY strong{
+        max-width: 200px;
+    }
+  .FOOTER{
+       grid-area: FOOTER;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 50px;
+       min-height: 100px;
+       color: #fff;
+       background: #2e0a0a;
+    }
+    .FOOTER a{
+        color: #fff;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .legal a{
+        text-decoration: underline;
+    }
+    .footer__nav nav{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #fff;
+    }
+    .footer__legalRedes{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .opciones_menu{
+        display: flex;
+        margin-top: 150px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .opciones_menu img{
+        width: 50px;
+    }
+    .burgers{
+        padding: 20px 50px;
+    }
+    .hot-dogs{
+        padding: 20px 50px;
+    }
+    .salads{
+        padding: 20px 50px;
+    }
+    .drinks{
+        padding: 20px 50px;
+    }
+    .ice-creams{
+        padding: 20px 50px;
+    }
+    .cardsContainer{
+        display: flex;
+        max-width: 1400px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 400px;
+        border-radius: 30px;
+        background: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+        margin: 20px;    
+       }
+    .card img{
+        width: 400px;
+        border-radius: 30px;
+    }
+    @media screen and (max-width: 768px) {
+        .FOOTER{
+            display: block;
+            text-align: center;
+        }
+        .footer__nav nav{
+            display: flex;
+            flex-direction: column;
+            border-top: 2px solid #fff;
+            height: 200px;
+            justify-content: space-between;
+        }
+        .footer__legalRedes{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .redes{
+            font-size: 2rem;
+        }
+        .redes i{
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 50px;
+            margin: 10px 0;
+        }
+        .redes span{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 570px) {
+        .HERO h1{
+            font-size: 2.2rem;
+        }   
+    }
