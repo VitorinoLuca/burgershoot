@@ -83,6 +83,10 @@ body{
          z-index: 1;
          text-align: center;
          background: url(assets/background.png);
+         background-image: url(assets/home-bg.png);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
         }
         .HERO img{
             width: 100%;
