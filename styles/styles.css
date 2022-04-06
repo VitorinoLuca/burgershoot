@@ -23,9 +23,19 @@
     margin: 0;
     padding: 0;
 }
-
+.privacy{
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+}
 body {
-    background: url(assets/background.png);
+    background: url(../assets/background.png);
 }
 
 .infoContainer {
@@ -488,4 +498,87 @@ body {
 }
 .poll h1{
     margin-top: 200px;
+}
+@media screen and (min-width:769px){
+    .header_mobile{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .header_desktop{
+        display: none;
+    }
+    header{
+        width: 100%;
+        background: #2e0a0a;
+        position: fixed;
+    }
+    .mobile-logo{
+        margin-left: 20px;
+    }
+    .mobile-logo strong a{
+        color: #ffff;
+        font-size: 1.6rem;
+    }
+    input , label{
+        display: block;
+    }
+    .nav-mobile{
+        height: 100px;
+        width: 100%;
+        padding-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bar-btn{
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .nav-menu{
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: 100px;
+        height: 0vh;
+        background: rgba(0, 0, 0, .95);
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav-menu li{
+        display: none;
+        line-height: 30px;
+        transition: all .5s;
+    }
+    .nav-menu li a{
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .nav-menu li a.active, .nav-menu li a:hover{
+        color: #b59645;
+        transition: .3s;
+    }
+    #check{
+        display: none;
+    }
+    #check:checked ~ .nav-menu{
+        height: 100vh;
+        position: fixed;
+    }
+    #check:checked ~ .nav-menu li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+}
+@media screen and (max-width:1030px){
+    .privacy{
+        margin-top: 150px;
+    }
 }
