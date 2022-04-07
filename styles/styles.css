@@ -68,13 +68,14 @@ body {
 
 .HEADER {
     grid-area: HEADER;
-    background: #2e0a0a;
+    background: #beab00;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     min-height: 100px;
     width: 100%;
     position: fixed;
+    top: 0;
 }
 
 .HEADER a {
@@ -130,7 +131,7 @@ body {
 .HERO h1 {
     font-size: 3rem;
     font-weight: 900;
-    color: #2e0a0ad8;
+    color: #be950b;
 }
 
 .HERO .btn {
@@ -138,7 +139,7 @@ body {
 }
 
 .HERO a {
-    background: #2e0a0a;
+    background: #b59645;
     color: #fff;
     padding: 20px;
     border-radius: 30px;
@@ -146,7 +147,7 @@ body {
 
 .INFO {
     grid-area: INFO;
-    background: #b59645;
+    background: #e2aa42;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -175,7 +176,7 @@ body {
 
 .SEPARADOR {
     grid-area: SEPARADOR;
-    background: #2e0a0a;
+    background: #66543a;
     color: #fff;
     height: 100px;
     align-items: center;
@@ -248,7 +249,7 @@ body {
 
 .CONTACT__BTN {
     width: max-content;
-    background: #2e0a0a;
+    background: #66543a;
     padding: 20px 30px;
     color: #fff;
     border-radius: 40px;
@@ -258,7 +259,7 @@ body {
 
 .CONTACT__INFO {
     grid-area: CONTACT__INFO;
-    background: #b59645;
+    background: #e2aa42;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -294,7 +295,7 @@ body {
     gap: 50px;
     min-height: 100px;
     color: #fff;
-    background: #2e0a0a;
+    background: #be9b00;
 }
 
 .FOOTER a {
@@ -430,7 +431,7 @@ body {
 }
 
 .HEADER .logo a:hover {
-    color: #b59645;
+    color: #c25c22;
     transition: .2s;
 }
 
@@ -439,7 +440,7 @@ body {
 }
 
 .nav_menu li a:hover {
-    color: #b59645;
+    color: #fa0000;
     transition: .2s;
 }
 
@@ -449,9 +450,8 @@ body {
 }
 
 .HERO .btn a:hover {
-    background: #b59645;
     transition: .2s;
-    color: #2e0a0a;
+    color: #010101;
 }
 
 .CONTACT__BTN:hover {
@@ -461,7 +461,7 @@ body {
 }
 
 .footer__nav nav a:hover {
-    color: #b59645;
+    color: #fa0000;
     transition: .2s;
 }
 
@@ -478,7 +478,10 @@ body {
     width: 100%;
     min-width: 320px;
 }
-
+.logo a:hover{
+    color: #fa0000;
+    transition: .4s;
+}
 .locals {
     text-align: center;
     display: flex;
@@ -522,8 +525,9 @@ body {
     }
     header{
         width: 100%;
-        background: #2e0a0a;
+        background: #beab00;
         position: fixed;
+        top: 0;
     }
     .mobile-logo{
         margin-left: 20px;
@@ -572,7 +576,7 @@ body {
         font-weight: 600;
     }
     .nav-menu li a.active, .nav-menu li a:hover{
-        color: #b59645;
+        color: #fa0000;
         transition: .3s;
     }
     #check{
