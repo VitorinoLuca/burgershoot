@@ -208,7 +208,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(assets/background.png);
+    background: url(../assets/background.png);
     background-position: center;
     min-height: 100vh;
 }
@@ -274,7 +274,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    background: url(assets/background__delivery.png);
+    background: url(../assets/background__delivery.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -335,7 +335,11 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.opciones_menu a{
+    width: 200px;
+    height: 156px;
+    color: #2e0a0a;
+}
 .opciones_menu img {
     width: 50px;
 }
@@ -488,16 +492,24 @@ body {
 
 .locals__container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
 }
 .poll{
     display: flex;
-    align-items: center;
     flex-direction: column;
     min-height: 90vh;
+    align-items: center;
+    justify-content: center;
 }
 .poll h1{
-    margin-top: 200px;
+    margin-top: 140px;
+}
+.introduccion_poll{
+    text-align: center;
 }
 @media screen and (min-width:769px){
     .header_mobile{
@@ -581,4 +593,23 @@ body {
     .privacy{
         margin-top: 150px;
     }
+}
+@media screen and (max-width:320px){
+    .local{
+        margin: 20px 0;
+        width: 300px;
+    }
+    .local span{
+        width: 200px;
+    }
+}
+.locals article img{
+    width: 100%;
+}
+.locals article{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    align-items: center;
 }
