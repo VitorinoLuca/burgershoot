@@ -136,11 +136,12 @@
         font-size: 2rem;
         border-bottom: 2px solid #000;
         text-align: center;
+        padding: 20px;
     }
     .contactForm{
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 40%;
         input{
             border-top: none;
             border-right: none;
@@ -157,6 +158,12 @@
             background: #beab00;
             border: #e2aa42;
             margin-bottom: 50px;
+            &:hover{
+                background: #66543a;
+                transition: .2s;
+                color: #fff;
+                transform: scale(1.1);
+            }
         }
     }
 }

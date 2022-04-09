@@ -107,11 +107,12 @@
   .CONTACT strong {
     font-size: 2rem;
     border-bottom: 2px solid #000;
-    text-align: center; }
+    text-align: center;
+    padding: 20px; }
   .CONTACT .contactForm {
     display: flex;
     flex-direction: column;
-    width: 50%; }
+    width: 40%; }
     .CONTACT .contactForm input {
       border-top: none;
       border-right: none;
@@ -127,6 +128,11 @@
       background: #beab00;
       border: #e2aa42;
       margin-bottom: 50px; }
+      .CONTACT .contactForm button:hover {
+        background: #66543a;
+        transition: .2s;
+        color: #fff;
+        transform: scale(1.1); }
 
 .DELIVERY {
   display: flex;
@@ -176,7 +182,7 @@
         width: 0;
         left: 0;
         bottom: -10px;
-        background-color: red;
+        background-color: #fff;
         transition: .3s; }
       .HEADER .nav_menu a:hover:after {
         width: 100%; }
