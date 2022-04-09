@@ -1,4 +1,4 @@
-.HERO{
+.HERO {
     height: 100vh;
     background: url(../assets/background_hero.png);
     background-position: center;
@@ -9,11 +9,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    img{
+
+    img {
         width: 100%;
         max-width: 600px;
     }
-    a{
+
+    a {
         color: #be9b00;
         font-weight: 600;
         font-size: 1.3rem;
@@ -21,37 +23,45 @@
         border: 3px solid #be9b00;
         border-radius: 40px;
         padding: 15px;
-        &:hover{
+
+        &:hover {
             background: #be9b00;
             color: #fff;
             transition: .2s;
         }
     }
-    .txt .btn{
+
+    .txt .btn {
         margin-top: 25px;
     }
-    h1{
+
+    h1 {
         font-size: 2.5rem;
         font-weight: 700;
     }
 }
-@media screen and (max-width:1682px){
-    .HERO{
+
+@media screen and (max-width:1682px) {
+    .HERO {
         margin-top: 4rem;
     }
 }
-@media screen and (max-width:1582px){
-    .HERO{
+
+@media screen and (max-width:1582px) {
+    .HERO {
         margin-top: 3rem;
-        h1{
+
+        h1 {
             font-size: 2rem;
         }
     }
 }
-@media screen and (width:375px){
-    .HERO{
+
+@media screen and (width:375px) {
+    .HERO {
         margin-top: 6rem;
-        .btn{
+
+        .btn {
             margin-bottom: 100px;
         }
     }
@@ -61,24 +71,27 @@
 
 
 
-.INFO{
+.INFO {
     background: #e2aa42;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     min-height: 300px;
     width: 100%;
-    .infoContainer__info{
+
+    .infoContainer__info {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         max-width: 400px;
-        p{
+
+        p {
             text-align: center;
         }
     }
-    i{
+
+    i {
         background: #ffff00;
         padding: 15px;
         font-size: 25px;
@@ -89,7 +102,7 @@
 
 
 
-.SEPARADOR{
+.SEPARADOR {
     background: #66543a;
     color: #fff;
     height: 100px;
@@ -106,14 +119,16 @@
     flex-wrap: wrap;
     min-height: 300px;
     align-items: center;
-    .infoContainer__info{
+
+    .infoContainer__info {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
         flex-wrap: wrap;
         width: 254px;
-        i{
+
+        i {
             background: #ffff00;
             padding: 15px;
             font-size: 25px;
@@ -132,17 +147,20 @@
     background-position: center;
     background: url(../assets/background.png);
     min-height: 100vh;
-    strong{
+
+    strong {
         font-size: 2rem;
         border-bottom: 2px solid #000;
         text-align: center;
         padding: 20px;
     }
-    .contactForm{
+
+    .contactForm {
         display: flex;
         flex-direction: column;
         width: 40%;
-        input{
+
+        input {
             border-top: none;
             border-right: none;
             border-left: none;
@@ -151,14 +169,16 @@
             font-size: 18px;
             background: none;
         }
-        button{
+
+        button {
             width: max-content;
             border-radius: 40px;
             padding: 20px 30px;
             background: #beab00;
             border: #e2aa42;
             margin-bottom: 50px;
-            &:hover{
+
+            &:hover {
                 background: #66543a;
                 transition: .2s;
                 color: #fff;
@@ -170,7 +190,7 @@
 
 
 
-.DELIVERY{
+.DELIVERY {
     display: flex;
     justify-content: center;
     text-align: center;

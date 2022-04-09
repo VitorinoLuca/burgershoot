@@ -1,5 +1,6 @@
+$color-header:#beab00;
 .HEADER {
-    background: #beab00;
+    background: $color-header;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -61,7 +62,7 @@
     }
     header{
         width: 100%;
-        background: #beab00;
+        background: $color-header;
         position: fixed;
         top: 0;
     }
