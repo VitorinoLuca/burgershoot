@@ -1,0 +1,139 @@
+.HEADER {
+    background: #beab00;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    strong {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        color: #f1f1f1;
+        font-weight: 700;
+        &:hover{
+            color: #fff;
+        }
+    }
+
+    .nav_menu {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        text-align: center;
+        gap: 20px;
+        align-items: center;
+
+        a {
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 0;
+                left: 0;
+                bottom: -10px;
+                background-color: red;
+                transition: .3s;
+            }
+
+            &:hover:after {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width:769px){
+    .header_mobile{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .header_desktop{
+        display: none;
+    }
+    header{
+        width: 100%;
+        background: #beab00;
+        position: fixed;
+        top: 0;
+    }
+    .header_mobile{
+        label{
+            margin-right: 10px;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    .mobile-logo{
+        margin-left: 20px;
+    }
+    .mobile-logo strong a{
+        color: #ffff;
+        font-size: 1.6rem;
+    }
+    input , label{
+        display: block;
+    }
+    .nav-mobile{
+        height: 100px;
+        width: 100%;
+        padding-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bar-btn{
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .nav-menu{
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: 100px;
+        height: 0vh;
+        background: rgba(0, 0, 0, .95);
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav-menu li{
+        display: none;
+        line-height: 30px;
+        transition: all .5s;
+    }
+    .nav-menu li a{
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .nav-menu li a.active, .nav-menu li a:hover{
+        color: #fa0000;
+        transition: .3s;
+    }
+    #check{
+        display: none;
+    }
+    #check:checked ~ .nav-menu{
+        height: 100%;
+        position: fixed;
+    }
+    #check:checked ~ .nav-menu li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+}
