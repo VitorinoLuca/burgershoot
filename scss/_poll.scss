@@ -1,0 +1,45 @@
+.poll {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+
+    .introduccion_poll {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    span {
+        text-align: center;
+    }
+
+    .poll_prg {
+        margin: 20px;
+        gap: 10px;
+        border-bottom: 2px solid #000;
+    }
+    #submit_poll{
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .poll_prg {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+@media screen and (max-width:877px){
+    .poll{
+        margin-top: 6rem;
+        text-align: center;
+    }
+}

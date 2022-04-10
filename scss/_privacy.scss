@@ -1,0 +1,31 @@
+.privacy{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (max-width: 1024px){
+    .privacy{
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 870px){
+    .privacy{
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width: 810px){
+    .privacy{
+        margin-top: 6rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .privacy{
+        margin-top: 7rem;
+    }
+}
