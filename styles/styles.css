@@ -53,7 +53,8 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   min-height: 300px;
-  width: 100%; }
+  width: 100%;
+  padding: 20px 0; }
   .INFO .infoContainer__info {
     display: flex;
     justify-content: center;
@@ -82,7 +83,8 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   min-height: 300px;
-  align-items: center; }
+  align-items: center;
+  padding: 20px 0; }
   .CONTACT__INFO .infoContainer__info {
     display: flex;
     flex-direction: column;
@@ -133,6 +135,43 @@
         transition: .2s;
         color: #fff;
         transform: scale(1.1); }
+  @media screen and (max-width: 768px) {
+    .CONTACT strong {
+      font-size: 1.2rem;
+      border: none; }
+    .CONTACT .contactForm {
+      width: 70%;
+      text-align: center; }
+      .CONTACT .contactForm input {
+        font-size: 12px;
+        padding: 15px; }
+      .CONTACT .contactForm button {
+        padding: 10px;
+        font-size: 12px; } }
+  @media screen and (max-width: 375px) {
+    .CONTACT strong {
+      font-size: 1.2rem; }
+    .CONTACT .contactForm {
+      width: 60%;
+      text-align: center; }
+      .CONTACT .contactForm input {
+        font-size: 12px;
+        padding: 15px; }
+      .CONTACT .contactForm button {
+        padding: 10px;
+        font-size: 12px; } }
+  @media screen and (max-width: 425px) {
+    .CONTACT strong {
+      font-size: 1.4rem; }
+    .CONTACT .contactForm {
+      width: 70%;
+      text-align: center; }
+      .CONTACT .contactForm input {
+        font-size: 14px;
+        padding: 18px; }
+      .CONTACT .contactForm button {
+        padding: 15px;
+        font-size: 14px; } }
 
 .DELIVERY {
   display: flex;
@@ -276,12 +315,20 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #fff; }
+    .FOOTER .footer__nav nav a:hover {
+      color: red;
+      transition: .5s; }
   .FOOTER .footer__legalRedes {
     display: flex;
     align-items: center;
     justify-content: space-between; }
     .FOOTER .footer__legalRedes .legal a {
       text-decoration: underline; }
+    .FOOTER .footer__legalRedes .redes {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      align-items: center; }
     .FOOTER .footer__legalRedes .redes i {
       border: 1px solid #fff;
       padding: 10px;
@@ -289,8 +336,8 @@
       margin: 10px 0;
       font-size: 1.3rem; }
       .FOOTER .footer__legalRedes .redes i:hover {
-        color: red;
-        transition: .3s; }
+        transform: scale(1.1);
+        transition: .2s; }
 
 @media screen and (max-width: 768px) {
   .FOOTER {

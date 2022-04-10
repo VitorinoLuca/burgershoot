@@ -22,6 +22,12 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 2px solid #fff;
+        a{
+            &:hover{
+                color: red;
+                transition: .5s;
+            }
+        }
     }
     .footer__legalRedes{
         display: flex;
@@ -30,6 +36,12 @@
         .legal a{
             text-decoration: underline;
         }
+        .redes{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            align-items: center;
+        }
         .redes i {
             border: 1px solid #fff;
             padding: 10px;
@@ -37,8 +49,8 @@
             margin: 10px 0;
             font-size: 1.3rem;
             &:hover{
-                color: red;
-                transition: .3s;
+                transform: scale(1.1);
+                transition: .2s;
             }
         }
     }

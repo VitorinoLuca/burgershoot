@@ -78,6 +78,7 @@
     flex-wrap: wrap;
     min-height: 300px;
     width: 100%;
+    padding: 20px 0;
 
     .infoContainer__info {
         display: flex;
@@ -119,6 +120,7 @@
     flex-wrap: wrap;
     min-height: 300px;
     align-items: center;
+    padding: 20px 0;
 
     .infoContainer__info {
         display: flex;
@@ -147,7 +149,6 @@
     background-position: center;
     background: url(../assets/background.png);
     min-height: 100vh;
-
     strong {
         font-size: 2rem;
         border-bottom: 2px solid #000;
@@ -183,6 +184,58 @@
                 transition: .2s;
                 color: #fff;
                 transform: scale(1.1);
+            }
+        }
+    }
+    @media screen and (max-width:768px){
+        strong{
+            font-size: 1.2rem;
+            border: none;
+        }
+        .contactForm{
+            width: 70%;
+            text-align: center;
+            input{
+                font-size: 12px;
+                padding: 15px;
+            }
+            button{
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+    @media screen and (max-width:375px){
+        strong{
+            font-size: 1.2rem;
+        }
+        .contactForm{
+            width: 60%;
+            text-align: center;
+            input{
+                font-size: 12px;
+                padding: 15px;
+            }
+            button{
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+    @media screen and (max-width:425px){
+        strong{
+            font-size: 1.4rem;
+        }
+        .contactForm{
+            width: 70%;
+            text-align: center;
+            input{
+                font-size: 14px;
+                padding: 18px;
+            }
+            button{
+                padding: 15px;
+                font-size: 14px;
             }
         }
     }
