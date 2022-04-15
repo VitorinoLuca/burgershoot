@@ -1,13 +1,29 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$headings: (
+    h1: 2.5em,
+    h2: 2em,
+    h3: 1.5em,
+    h4: 1em,
+    h5: 0.75em,
+    h6: 0.35em,
+);
+$h1: map-get($headings, h1);
+
+h1{
+    font-size: $h1;
+}
 .HERO {
     height: 100vh;
     background: url(../assets/background_hero.png);
     background-position: center;
+    @include flex();
     background-size: cover;
-    display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 
     img {
@@ -36,7 +52,7 @@
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: $h1;
         font-weight: 700;
     }
 }
@@ -81,9 +97,7 @@
     padding: 20px 0;
 
     .infoContainer__info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex();
         flex-direction: column;
         max-width: 400px;
 
@@ -107,9 +121,7 @@
     background: #66543a;
     color: #fff;
     height: 100px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    @include flex();
 }
 
 
@@ -142,9 +154,7 @@
 
 
 .CONTACT {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
     flex-direction: column;
     background-position: center;
     background: url(../assets/background.png);
@@ -244,10 +254,8 @@
 
 
 .DELIVERY {
-    display: flex;
-    justify-content: center;
+    @include flex();
     text-align: center;
-    align-items: center;
     height: 100vh;
     flex-direction: column;
     background: url(../assets/background__delivery.png);
