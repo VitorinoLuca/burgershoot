@@ -10,6 +10,7 @@
         justify-content: center;
         flex-wrap: wrap;
         background: #f1f1f1;
+        margin-bottom: 2rem;
         a{
             box-shadow: 2px 2px 2px #000;
         }
@@ -33,6 +34,12 @@
     }
     .burger_menu{
         padding: 20px;
+        .menuTittle{
+            margin-top: 8rem;
+            strong{
+                font-size: 4rem;
+            }
+        }
     }
     .cardsContainer{
         display: flex;

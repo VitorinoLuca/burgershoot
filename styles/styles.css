@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 h1 {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  text-shadow: 2px 2px 2px #6d6d6d;
+  color: #010104; }
 
 .HERO {
   height: 100vh;
@@ -308,7 +310,8 @@ h1 {
     margin-top: 150px;
     justify-content: center;
     flex-wrap: wrap;
-    background: #f1f1f1; }
+    background: #f1f1f1;
+    margin-bottom: 2rem; }
     .menu .opciones_menu a {
       box-shadow: 2px 2px 2px #000; }
     .menu .opciones_menu a {
@@ -327,6 +330,10 @@ h1 {
       padding: 20px 50px; }
   .menu .burger_menu {
     padding: 20px; }
+    .menu .burger_menu .menuTittle {
+      margin-top: 8rem; }
+      .menu .burger_menu .menuTittle strong {
+        font-size: 4rem; }
   .menu .cardsContainer {
     display: flex;
     max-width: 1400px;
@@ -430,9 +437,25 @@ h1 {
   .poll span {
     text-align: center; }
   .poll .poll_prg {
-    margin: 20px;
-    gap: 10px;
-    border-bottom: 2px solid #000; }
+    border-bottom: 2px solid #beab00;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px; }
+    .poll .poll_prg strong {
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+    .poll .poll_prg .poll_prg__container {
+      display: flex;
+      flex-wrap: wrap; }
+      .poll .poll_prg .poll_prg__container .separation {
+        display: flex;
+        align-items: center;
+        width: 250px;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        gap: 10px; }
   .poll #submit_poll {
     margin: 20px; }
 

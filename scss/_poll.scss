@@ -21,9 +21,28 @@
     }
 
     .poll_prg {
-        margin: 20px;
-        gap: 10px;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid $color-header;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        strong{
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+        .poll_prg__container{
+            display: flex;
+            flex-wrap: wrap;
+            .separation{
+                display: flex;
+                align-items: center;
+                width: 250px;
+                justify-content: center;
+                margin-right: auto;
+                margin-left: auto;
+                gap: 10px;
+            }
+        }
     }
     #submit_poll{
         margin: 20px;
