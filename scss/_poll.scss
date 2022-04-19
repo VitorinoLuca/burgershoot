@@ -1,3 +1,5 @@
+$color-header:#beab00;
+
 .poll {
     min-height: 100vh;
     display: flex;
@@ -26,14 +28,17 @@
         flex-direction: column;
         text-align: center;
         padding: 20px;
-        strong{
+
+        strong {
             font-size: 1.2rem;
             text-transform: capitalize;
         }
-        .poll_prg__container{
+
+        .poll_prg__container {
             display: flex;
             flex-wrap: wrap;
-            .separation{
+
+            .separation {
                 display: flex;
                 align-items: center;
                 width: 250px;
@@ -44,11 +49,16 @@
             }
         }
     }
-    #submit_poll{
+
+    #submit_poll {
         margin: 20px;
     }
 }
-
+@media screen and (max-width:1556px){
+    .poll{
+        margin-top: 10rem;
+    }
+}
 @media screen and (max-width:768px) {
     .poll_prg {
         display: flex;
@@ -56,8 +66,9 @@
         align-items: center;
     }
 }
-@media screen and (max-width:877px){
-    .poll{
+
+@media screen and (max-width:877px) {
+    .poll {
         margin-top: 6rem;
         text-align: center;
     }

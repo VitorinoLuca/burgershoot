@@ -459,6 +459,10 @@ h1 {
   .poll #submit_poll {
     margin: 20px; }
 
+@media screen and (max-width: 1556px) {
+  .poll {
+    margin-top: 10rem; } }
+
 @media screen and (max-width: 768px) {
   .poll_prg {
     display: flex;
