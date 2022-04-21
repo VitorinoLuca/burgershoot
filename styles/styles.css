@@ -16,8 +16,8 @@ h1 {
   flex-wrap: wrap;
   text-align: center; }
   .HERO img {
-    width: 100%;
-    max-width: 600px; }
+    width: 90%;
+    max-width: 500px; }
   .HERO a {
     color: #be9b00;
     font-weight: 600;
@@ -44,7 +44,7 @@ h1 {
   .HERO {
     margin-top: 3rem; }
     .HERO h1 {
-      font-size: 2rem; } }
+      font-size: 1.5rem; } }
 
 @media screen and (width: 375px) {
   .HERO {
@@ -351,6 +351,10 @@ h1 {
       .menu .cardsContainer .card img {
         width: 100%;
         border-radius: 30px; }
+
+@media screen and (max-width: 768px) {
+  #display-none {
+    display: none; } }
 
 .FOOTER {
   display: flex;
