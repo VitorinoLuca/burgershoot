@@ -331,9 +331,9 @@ h1 {
   .menu .burger_menu {
     padding: 20px; }
     .menu .burger_menu .menuTittle {
-      margin-top: 8rem; }
+      margin-top: 5rem; }
       .menu .burger_menu .menuTittle strong {
-        font-size: 4rem; }
+        font-size: 3rem; }
   .menu .cardsContainer {
     display: flex;
     max-width: 1400px;
